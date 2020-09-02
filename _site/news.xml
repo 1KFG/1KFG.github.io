@@ -1,35 +1,31 @@
+---
+---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>Stajich Lab News</title>
-  <link href="http://localhost:4000"/>
-  <link type="application/atom+xml" rel="self" href="http://localhost:4000/news.xml"/>
-  <updated>2020-08-25T03:07:07-07:00</updated>
-  <id>http://localhost:4000</id>
+  <title>1KFG news</title>
+  <link href="{{ site.url }}"/>
+  <link type="application/atom+xml" rel="self" href="{{site.url}}/news.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{site.url}}</id>
   <author>
-    <name>Jason E. Stajich</name>
+    <name>Jason Stajich</name>
     <!-- <email>you@example.com</email> -->
   </author>
 
-  
+  {% for post in site.posts limit:20 %}
   <entry>
-    <id>http://localhost:4000/2020/07/02/Lichen-collecting-JT</id>
-    <link type="text/html" rel="alternate" href="http://localhost:4000/2020/07/02/Lichen-collecting-JT/"/>
-    <title>Lichen collecting in Joshua Tree</title>
-    <published>2020-07-02T00:00:00-07:00</published>
-    <updated>2020-07-02T00:00:00-07:00</updated>
+    <id>{{site.url}}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="{{site.url}}{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>Jason E. Stajich</name>
-      <uri>/2020/07/02/Lichen-collecting-JT/</uri>
+      <name>{{post.author}}</name>
+      <uri>{{post.url}}</uri>
     </author>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/static/img/news/A_socialis.jpeg&quot; alt=&quot;A_socialis&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We kicked off collecting samples for our &lt;a href=&quot;https://sites.lifesci.ucla.edu/eeb-CCGP/&quot;&gt;California Conservation Genomics Project&lt;/a&gt; where we are sequencing the native California lichen &lt;em&gt;Acarospora socialis&lt;/em&gt;. This work is the core of Julia Adam‘s Dissertation which is focusing on study of population genetic and phylogeographic patterns and how the fungal and bacteria microbiome is related to ecological context of this crustose lichen across an elevation gradient in multiple landscapes. The CCGP project will generate a reference genome for this species as well as population genomic dataset from ~150 samples. We are excited to examine the population structure of this lichen.&lt;/p&gt;
-
-&lt;p&gt;Julia’s been studying lichens for several years and currently helps curate the UCR Herbarium lichen collection. Jason is definitely not a lichenologist, but we are excited to apply genomic approaches to the study of this fascinating symbiosis.&lt;/p&gt;
-
-</content>
+    <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
-  
+  {% endfor %}
  
 </feed>

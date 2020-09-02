@@ -1,236 +1,112 @@
-<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Publications from the Stajich Lab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="This is the official web page for the Jason Stajich Lab at UCR.">
-    <meta name="theme-color" content="#052049">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-
-    <!-- <link href="/static/css/bootstrap.css" rel="stylesheet"> -->
-    <!-- <link href="/static/css/bootstrap-responsive.css" rel="stylesheet"> -->
-    <link href="/static/css/syntax.css" rel="stylesheet">
-    <link href="/static/css/custom.css" rel="stylesheet">
-
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #052d69">
-        <!-- <a class="navbar-brand" href="/">Stajich Lab</a> -->
-        <a href="/"><img class="inline-block navb-icon" src="/static/img/Stajichlab1.png"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto">
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/" alt="Home"> Home</a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/research" alt="Research"> Research</a></li>
-              
-            
-              
-                <li class = "nav-item active"><a class="nav-link" href="/publications" alt="Publications"> Publications<span class="sr-only">(current)</span></a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/members" alt="Members"> Members</a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/courses" alt="Teaching"> Teaching</a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/news" alt="News"> News</a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/join" alt="Join"> Join</a></li>
-              
-            
-              
-                <li class="nav-item"><a class="nav-link" href="/contact" alt="Contact"> Contact</a></li>
-              
-            
-            <!-- <li><a href="https://sites.google.com/a/fraserlab.com/ucsf-private/" alt="Lab Private Area">private</a></li> -->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </nav>
-
-    <div class="container">
-
-
-    <!--  Previous navbar bootstrap 3.2 -->
-    <!--
-      <div class="navbar navbar-fixed-top navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Stajich Lab</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              
-                
-                  <li><a href="/" alt="Home"> Home</a></li>
-                
-              
-                
-                  <li><a href="/research" alt="Research"> Research</a></li>
-                
-              
-                
-                  <li class = "active"><a href="/publications" alt="Publications"> Publications</a></li>
-                
-              
-                
-                  <li><a href="/members" alt="Members"> Members</a></li>
-                
-              
-                
-                  <li><a href="/courses" alt="Teaching"> Teaching</a></li>
-                
-              
-                
-                  <li><a href="/news" alt="News"> News</a></li>
-                
-              
-                
-                  <li><a href="/join" alt="Join"> Join</a></li>
-                
-              
-                
-                  <li><a href="/contact" alt="Contact"> Contact</a></li>
-                
-              
-              -->
-              <!-- <li><a href="https://sites.google.com/a/fraserlab.com/ucsf-private/" alt="Lab Private Area">private</a></li> -->
-           <!-- </ul>
-          </div>
-        </div>
-      </div>
-
-    <div class="container"> -->
-
+---
+title: Publications from the 1000 Fungal Genomes Project
+layout: default
+group: publications
+---
 
 <h1>Publications</h1>
 <div class="container-fluid">
 
-
+{% for publication in site.publications reversed %}
         <hr>
-        <div class="row" style="padding-top: 60px; margin-top: -60px;" id="32727924">
-        <div style="font-size: 120% !important; width: 100%"><p>Phylogenomic Analyses of Non-Dikarya Fungi Supports Horizontal Gene Transfer Driving Diversification of Secondary Metabolism in the Amphibian Gastrointestinal Symbiont, Basidiobolus</p>
-</div><div><p>Tabima JF, Trautman IA, Chang Y, <strong>Wang Y</strong>, Mondo S, Kuo A, Salamov A, Grigoriev IV, <strong>Stajich JE</strong>, Spatafora JW. <em>G3 (Bethesda).</em> 2020;g3.401516.2020.</p>
-</div>
+        <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{publication.pmid}}">
+        <div style="font-size: 120% !important; width: 100%">{{ publication.title | markdownify }}</div><div>{{ publication.citation | markdownify }}</div>
         </div>
         <div class="row" style="padding-top: 20px; margin-top: - 20px;">
         	<div class="col-sm-6">
-        		<img class = "img-fluid" src = "" alt = "Key Figure" style="max-height: 200px;">
+        		<img class = "img-fluid" src = "{{publication.image}}" alt = "Key Figure" style="max-height: 200px;">
         	</div>
         	<ul class="col-sm-6">
         			<strong>Access the paper</strong>
         			<!--PMID-->
-        			
-        			<li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/32727924" alt = "pubmed link: 32727924"> 32727924</a></li>
-        			
+        			{% if publication.pmid %}
+        			<li>PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{publication.pmid}}" alt = "pubmed link: {{publication.pmid}}"> {{publication.pmid}}</a></li>
+        			{% endif %}
 
         			<!--PMCID - optional -->
-        			
+        			{% if publication.pmcid %}
+        			<li>PMCID: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{publication.pmcid}}" alt = "pubmed central link: {{publication.pmcid}}"> {{publication.pmcid}}</a></li>
+        			{% endif %}
 
         			<!--Biorxiv - optional -->
-        			
+        			{% if publication.biorxiv %}
+        			<li>Biorxiv Preprint: <a href="http://dx.doi.org/10.1101/{{publication.biorxiv}}" alt = "biorxiv preprint link: {{publication.biorxiv}}"> {{publication.biorxiv | split: "." | last }}</a></li>
+        			{% endif %}
 
         			<!--Arxiv - optional -->
-        			
+        			{% if publication.arxiv %}
+        			<li>arXiv Preprint: <a href="https://arxiv.org/abs/{{publication.arxiv}}" alt = "arxiv preprint link: {{publication.arxiv}}"> {{publication.arxiv}}</a></li>
+        			{% endif %}
 
         			<!--Chemrxiv - optional -->
-        			
+        			{% if publication.chemrxiv %}
+        			<li>ChemRxiv Preprint: <a href=" https://doi.org/10.26434/chemrxiv.{{publication.chemrxiv}}" alt = "chemrxiv preprint link: {{publication.chemrxiv}}"> {{publication.chemrxiv}}</a></li>
+        			{% endif %}
 
         			<!-- PDF -->
-        			<li><a href="https://www.g3journal.org/content/ggg/early/2020/07/28/g3.120.401516.full.pdf" alt = "PDF"> Full Text</a></li>
+        			<li><a href="{{publication.pdf}}" alt = "PDF"> Full Text</a></li>
 
         			<!-- Datasets - optional -->
-        			
+        			{% if publication.data %}
+        			<li>Online Dataset{% if publication.data.size > 1 %}s{% endif %}:
+        				{% if publication.data.size > 1 %}
+        				<ul>
+        					{% for dataset in publication.data %}
+        					<li><a href="http://dx.doi.org/{{dataset}}" alt = "sbgrid data repository">doi:{{dataset}}</a></li>
+        					{% endfor %}
+        				</ul>
+        				{% else %}
+        				<a href="http://dx.doi.org/{{publication.data}}" alt = "sbgrid data repository">doi:{{publication.data}}</a>
+        				{% endif %}
+        			</li>
+        			{% endif %}
 
         			<!--PDBS - optional-->
-        			
+        			{% if publication.pdbs %}
+        			<li>Deposited Structure{% if publication.pdbs.size > 1 %}s{% endif %}:
+        				{% for code in publication.pdbs %}
+        				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{code}}">{{code}}</a>{% unless forloop.last %}, {% endunless %}
+        				{% endfor %}
+        			</li>
+        			{% endif %}
 
         			<!--EMBDS - optional-->
-        			
+        			{% if publication.emdbs %}
+        			<li>Deposited Map{% if publication.emdbs.size > 1 %}s{% endif %}:
+        				{% for code in publication.emdbs %}
+        				<a href="http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-{{code}}">{{code}}</a>{% unless forloop.last %}, {% endunless %}
+        				{% endfor %}
+        			</li>
+        			{% endif %}
 
         			<!--pairs of maps and models - optional-->
-        			
+        			{% if publication.paired_maps_and_models %}
+        			<li>Deposited Structure{% if publication.paired_maps_and_models.size > 1 %}s{% endif %} and Map{% if publication.paired_maps_and_models.size > 1 %}s{% endif %}:
+        				{% for pair in publication.paired_maps_and_models %}
+        				<a href="http://www.rcsb.org/pdb/explore/explore.do?structureId={{pair.pdb}}">{{pair.pdb}}</a>/<a href="http://www.ebi.ac.uk/pdbe/entry/emdb/EMD-{{pair.emdb}}">{{pair.emdb}}</a>{% unless forloop.last %}, {% endunless %}
+        				{% endfor %}
+        			</li>
+        			{% endif %}
 
         			<!--zenodo records - optional-->
-        			
+        			{% if publication.zenodo %}
+        			<li>Zenodo Record{% if publication.zenodo.size > 1 %}s{% endif %}:
+        				{% for record in publication.zenodo %}
+        				<a href="https://doi.org/10.5281/zenodo.{{record.code}}"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.{{record.code}}.svg" alt="DOI"></a>{% if record.description %} ({{record.description}}){% endif %}{% unless forloop.last %}, {% endunless %}
+        				{% endfor %}
+        			</li>
+        			{% endif %}
 
 
         			<!--additional links - optional-->
-                                
-                                <strong>Additional Links</strong>:
-                                        
-                                        <li><a href="https://github.com/zygolife/Basidiobolus_SM_repo" alt="Github repository supporting publication">Github repository supporting publication</a></li>
-                                        
-                                
+                                {% if publication.links %}
+                                <strong>Additional Links</strong>{% if publication.links.size > 1 %}s{% endif %}:
+                                        {% for link in publication.links %}
+                                        <li><a href="{{link.url}}" alt="{{link.name}}">{{link.name}}</a></li>
+                                        {% endfor %}
+                                {% endif %}
         	</ul>
         </div>
         <br>
-
+{% endfor %}
 </div>
-
-
-    </div>
-    <hr>
-    <div id="footer footer-fixed-bottom", style="background-color:#052d69;">
-      <div class="container", style="background-color:#052d69;">
-        <p class="text-muted credit", style="text-align:center"> <br> Stajich Lab at University of California Riverside.<br> 
-            This website is open-source and available on <a href="https://github.com/stajichlab/tajichlab.github.io">Github</a>. <br>
-            It uses templates from the <a href="https://fraserlab.com/2020/05/03/Clone-this-website/">Fraser Lab</a>.</p>
-      </div>
-    </div>
-
-     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" integrity="sha256-v00gso3ox/d0KLJDJew6+zm29+J39rYWZvOgoXzDtCs=" crossorigin="anonymous"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-52773332-1', 'auto');
-      ga('send', 'pageview');
-    
-    </script>
-  </body>
-</html>  
-    
-    
-    <!-- From boostrap 3.2-->
-    <!-- <script src="/static/js/bootstrap.min.js"></script> -->
-
-  
