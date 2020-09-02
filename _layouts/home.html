@@ -1,0 +1,18 @@
+{% include header.html %}
+
+<div class = "page header"><h1 style="text-align:center;">Welcome to the Stajich Lab! </h1></div>
+<div class="container px-2 max-width: 100%">
+    <img class="img-fluid mx-auto d-block" src="/static/img/StajichLabPic_crop_sm.jpg" alt="Stajch lab at UCR">
+    <br>
+    <div class="row"> 
+        <div class="col-sm-8">	
+    	    <div class="jumbotron h-100">
+        	    {{ content }}
+            </div>
+        </div>
+        <div class="col">
+            {% include sidebar.html %}
+        </div>
+    </div>
+</div>
+{% include footer.html %}

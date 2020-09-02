@@ -1,0 +1,197 @@
+# a minimal input file for the "build research" python script, used to generate
+# a full bibliography for the research page
+
+# PARAMETERS:
+
+# id:
+# an identifier string that Manubot can understand and cite
+
+# thumbnail:
+# url to a striking image or figure from your paper
+
+# links:
+# a list of additional links that will show next to your paper citation
+
+# type:
+# determines icon shown, and used in filters at the top of page
+# look in "paper link types" file to see what unique icons and types can be specified
+# if not specified, link will be treated as generic type and icon
+
+# text:
+# text to show next to icon
+# if not specified, defaults to some text that matches type (see "paper link types")
+
+# url:
+# url to link to
+# if not specified, defaults to url that Manubot returns for citation
+
+# tags:
+# a list of key topics/themes of your paper. aim for 2 to 5. look at other
+# papers and try to use similar tags.
+
+# NOTE:
+
+# papers will be displayed in order of and grouped by date, regardless of how
+# they are listed here. still, it is recommended to split up this list a bit
+# so it is less unwieldy
+
+# 2020
+
+- id: doi:10.1146/annurev-micro-022020-051835
+  tags:
+    - fungi
+    - review
+- id: pmid:32727924
+  tags:
+    - zygolife
+    - basidiobolus
+    - secondary metabolism
+- id: pmid:32585947
+  tags: 
+    - Antarctica
+    - sampling design
+- id: pmid:32573682
+  tags:
+    - biological crusts
+    - microbial ecology
+    - Fungal ITS
+    - Bacteria 16S
+- id: pmid:32555716
+- id: pmid:32412847
+- id: pmid:32389308
+- id: pmid:32371596
+- id: pmid:32241854
+- id: pmid:32161129
+- id: pmid:32139564
+- id: pmid:32041249
+- id: pmid:31871487
+- id: pmid:31768192
+- id: pmid:31647694
+- id: pmid:31632357
+- id: pmid:31548684
+- id: pmid:31518652
+- id: pmid:31488541
+- id: pmid:31455637
+- id: pmid:31416856
+- id: pmid:31393667
+- id: pmid:31156574
+- id: pmid:31126947
+- id: pmid:31072892
+- id: pmid:30987585
+- id: pmid:30778188
+- id: pmid:30733435
+- id: pmid:30701257
+- id: pmid:30697917
+- id: pmid:30673440
+- id: pmid:30639767
+- id: pmid:30539259
+- id: pmid:30485448
+- id: pmid:30389707
+- id: pmid:30293061
+- id: pmid:30246146
+- id: pmid:30111619
+- id: pmid:30016947
+- id: pmid:30008702
+- id: pmid:29865244
+- id: pmid:29764946
+- id: pmid:29764372
+- id: pmid:29739910
+- id: pmid:29675967
+- id: pmid:29674435
+- id: pmid:29371508
+- id: pmid:29321239
+- id: pmid:29211832
+- id: pmid:29158416
+- id: pmid:29023459
+- id: pmid:28917057
+- id: pmid:28916147
+- id: pmid:28876195
+- id: pmid:28820125
+- id: pmid:28684563
+- id: pmid:28500048
+- id: pmid:28481340
+- id: pmid:28462022
+- id: pmid:28176784
+- id: pmid:28149701
+- id: pmid:30682305
+- id: pmid:27738200
+- id: pmid:27554660
+- id: pmid:27294409
+- id: pmid:27048799
+- id: pmid:27034999
+- id: pmid:26976598
+- id: pmid:26903035
+- id: pmid:26109355
+- id: pmid:25819009
+- id: pmid:25805857
+- id: pmid:25750214
+- id: pmid:25351875
+- id: pmid:25330340
+- id: pmid:25143134
+- id: pmid:24912000
+- id: pmid:24813190
+- id: pmid:24743168
+- id: pmid:24299411
+- id: pmid:24285193
+- id: pmid:24068976
+- id: pmid:23961317
+- id: pmid:23951101
+- id: pmid:23932404
+- id: pmid:23928422
+- id: pmid:23650365
+- id: pmid:23576519
+- id: pmid:23530226
+- id: pmid:23514374
+- id: pmid:23341551
+- id: pmid:23186325
+- id: pmid:22718849
+- id: pmid:22593224
+- id: pmid:22072962
+- id: pmid:22064857
+- id: pmid:21750257
+- id: pmid:21304167
+- id: pmid:21268975
+- id: pmid:20885784
+- id: pmid:20836076
+- id: pmid:20675579
+- id: pmid:20626842
+- id: pmid:20622885
+- id: pmid:20601044
+- id: pmid:20547848
+- id: pmid:20516208
+- id: pmid:20386741
+- id: pmid:20126439
+- id: pmid:19788875
+- id: pmid:19717792
+- id: pmid:19161465
+- id: pmid:19085333
+- id: pmid:18852473
+- id: pmid:18322534
+- id: pmid:18313909
+- id: pmid:18294377
+- id: pmid:18287711
+- id: pmid:17949488
+- id: pmid:17337636
+- id: pmid:17320905
+- id: pmid:17183716
+- id: pmid:17148473
+- id: pmid:17121679
+- id: pmid:17080091
+- id: pmid:17051209
+- id: pmid:16988423
+- id: pmid:16963629
+- id: pmid:16962256
+- id: pmid:16899494
+- id: pmid:16682456
+- id: pmid:16606443
+- id: pmid:16222245
+- id: pmid:16143628
+- id: pmid:16077014
+- id: pmid:15854223
+- id: pmid:15470254
+- id: pmid:15356276
+- id: pmid:14624247
+- id: pmid:12716998
+- id: pmid:12368254
+- id: pmid:12368253
+- id: pmid:11743579

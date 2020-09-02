@@ -1,0 +1,43 @@
+- name: Home
+  link: "/"
+  group: home
+
+- name: Research
+  link: "/research"
+  group: research
+
+- name: Publications
+  link: "/publications"
+  group: publications
+
+- name: Members
+  link: "/members"
+  group: members
+
+- name: Teaching
+  link: "/courses"
+  group: courses
+
+#- name: philosophy
+#  link: "/compact"
+#  group: compact
+
+- name: News
+  link: "/news"
+  group: news
+
+- name: Join
+  link: "/join"
+  group: join
+
+- name: Contact
+  link: "/contact"
+  group: contact
+
+# - name: links
+#   link: "/links"
+#   group: links
+
+#- name: private
+#  link: "https://sites.google.com/fraserlab.com/fraserlab-private/" #"https://sites.google.com/a/fraserlab.com/ucsf-private/"
+#  group: private
