@@ -1,31 +1,88 @@
 ---
-title: Contact the Stajich Lab
+title: Contact the 1000 Fungal Genomes Project
 layout: default
 group: contact
 ---
 
-# Contact the Stajich Lab
-Jason E Stajich, PhD <br>
-Professor, Dept of Microbiology and Plant Pathology <br>
-Chair, Graduate Council (2018-2020) <br>
-Chair Elect, Academic Senate, UC Riverside Division <br>
-University of California, Riverside <br>
+The project was proposed by the following Primary Investigators, but we hope to make this a resource and a collaborative project that engages the broad mycological community.
 
-jason.stajich (AT) ucr.edu
+Primary Investigators
 
-## Mailing address
+* Joey Spatafora (Oregon State University)
+* Jason Stajich (University of California, Riverside)
+* Kevin McCluskey (FGSC)
+* Pedro Crous (CBS, Netherlands)
+* Gillian Turgeon (Cornell University)
+* Daniel Lindner (USDA Forest Service)
+* Kerry O’Donnell (USDA ARS)
+* Todd Ward (USDA ARS)
+* Antonis Rokas (Vanderbilt University)
+* Louise Glass (University of California at Berkeley)
+* Betsy Arnold (University of Arizona)
+* Francis Martin (INRA, France)
+* Igor Grigoriev (JGI DOE)
 
-Jason Stajich Laboratory <br>
-900 University Ave <br>
-1219 Genomics <br>
-Dept of Microbiology and Plant Pathology <br>
-University of California-Riverside <br>
-Riverside, CA 92521 <br>
+Culture collections
+=====
 
-## Google maps direction
-Getting here, please follow google maps direction <br>
+* CBS – Centraal Bureau voor Schimmelcultures, Fungal Biodiversity centre
+* FGSC – Fungal Genetics Stock Center
+* NRRL – ARS (NRRL) Culture collection
+* CFMR – USDA Center for Forest Mycology Research Culture Collection
+* Gilbertson Herbarium, Univ of Arizona
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.81721173418!2d-117.32831588478702!3d33.971537380627936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU4JzE3LjUiTiAxMTfCsDE5JzM0LjEiVw!5e0!3m2!1sen!2sus!4v1598197802083!5m2!1sen!2sus" height="500" width="100%" frameborder="2" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+Contributors
+=========
 
+* Alisha Quandt
+* Aaron David
+* Alija Mujic
+* Allison Walker
+* Andrii Gryganskyi
+* Annegret Kohler
+* Asuncion Morte
+* Brenda Wingfield
+* Benjamin Stielow
+* Cathie Aime
+* Daniel Lindner
+* David Ezra
+* David Hibbett
+* Derek Johnson
+* Francis Martin
+* Gabor Kovacs
+* Gerald Bills
+* Gregory Bonito
+* Gunther Doehlemann
+* Hao Tan
+* Hongae Park
+* In-Geol Choi
+* James Anderson
+* Jana U’Ren
+* Janneke Bloome
+* Kathryn Bushley
+* Kerry O’Donnell
+* Kevin Solomon
+* Kirk Broders
+* Konstantin Krutovsky
+* Lazslo Nagly
+* Manfred Binder
+* Martha Powell
+* Mary Berbee
+* Merje Toome
+* Michelle O’Malley
+* Mike Wingfield
+* Minou Nowrousian
+* Otto Miettinen
+* Patricia Jargeat
+* Patrik Inderbitzin
+* Pedro Crous
+* Posy Busby
+* Rachel Koch
+* Rex Malstrom
+* Romina Gazis
+* Rytas Vilgalys
+* Sebastien Duplessis
+* Teeratas Kijpornyongpan
+* Timothy James
 
-
+Additional contributions from Taxonomists, Mycologists, and those focusing on fungal genomics is encouraged and needed. We need the expertise and efforts of the entire community of fungal enthusiasts from scientists to amateurs to collect the materials in order to sample the 500+ recognized families of Fungi.  We also welcome the help and contributions of genome scientists interested in interpreting the results from the sequencing projects and comparative analyses.  Please contact Joey or Jason by email if you have an interest. In the coming months we will provide an interactive web resource to track the project involvement and which Families need help gathering materials.
